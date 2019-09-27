@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav a {
+
+    top: 0;
+    font-family: acumin-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+color: rgb(22, 22, 22);
+text-decoration: none;
+float: left;
+font-size: 18px;
+padding: 27.5px 8px;
+}
+
+nav a#logo {
+    padding: 0 20px 0 0;
+}
+
+nav a img {
+    height:80px;
+    float: left;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 101;
+    height: 125px;
+    padding: 20px 40px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: block;
+    max-width: 1400px;
+    margin: 125px auto 0;
+    padding: 120px 20px 0px;
+    background: url("clouds.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: acumin-pro, sans-serif;
+    position: relative;
+    max-height: calc(100vh - 125px);
+    overflow: hidden;
+}
+
+header img.plane {
+    display: block;
+    width:100%;
+    padding: 0 20px;
+    margin-bottom: -500px;
+    position: absolute;
+    right: 0;
+}
+
+header img.clouds {
+    display: block;
+    width:100%;
+    padding: 0 20px;
+    position: relative;
+    right: 0;
+}
+
+
+header h1 {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    margin: 0;
+    font-size: 64px;
+    line-height: 1em;
+    max-width: 480px;
+}
+
+header.hotels {
+    margin: 0 auto;
+    background: linear-gradient(white, transparent), url("beach.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 120px 20px 0;
+
+}
+
+header.hotels h1 {
+    display: block;
+    margin: 0 auto;
+    max-width: 480px;
+    text-align: center;
+}
+
+header img.family {
+    display: block;
+    width:100%;
+    max-width: 820px;
+    padding: 0 20px;
+    position: relative;
+    margin: 60px auto 0;
+}
+
+header.car_rentals {
+    margin: 0 auto;
+    background: linear-gradient(black 0%,  transparent 70%), url("road.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+header img.car {
+    display: block;
+    width:100%;
+    padding: 0;
+    position: relative;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+header.car_rentals h1 {
+    display: block;
+    margin: 0 auto;
+    max-width: 480px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav a:not(#logo) {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 48px;
+    }
+
+    header h2 {
+        font-size: 36px;
+        margin: 0;
+    }
+}
